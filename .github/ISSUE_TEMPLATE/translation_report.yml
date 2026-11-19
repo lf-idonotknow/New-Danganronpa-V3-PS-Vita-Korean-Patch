@@ -1,0 +1,23 @@
+name: 오타·번역 수정
+description: 오타, 어색한 표현, 뜻이 달라진 번역을 알려 주세요.
+body:
+  - type: input
+    id: patch-version
+    attributes:
+      label: 한글 패치 버전 또는 확인한 빌드
+    validations:
+      required: true
+  - type: input
+    id: scene
+    attributes:
+      label: 챕터와 장면
+      placeholder: 장소, 화자, 화면 이름을 아는 만큼 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: wording
+    attributes:
+      label: 현재 문구와 수정 의견
+      description: 현재 표시되는 문구와 수정이 필요한 이유를 적어 주세요. 가능하면 화면 사진도 남겨 주세요.
+    validations:
+      required: true

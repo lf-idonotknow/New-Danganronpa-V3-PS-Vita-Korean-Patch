@@ -1,0 +1,29 @@
+name: 진행·화면 오류
+description: 게임 진행, 화면 표시, 패치 설치 문제를 알려 주세요.
+body:
+  - type: input
+    id: patch-version
+    attributes:
+      label: 한글 패치 버전 또는 확인한 빌드
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 사용 환경
+      placeholder: PS Vita 기종·펌웨어·rePatch 버전 또는 Vita3K 버전
+    validations:
+      required: true
+  - type: input
+    id: scene
+    attributes:
+      label: 챕터와 장면 또는 오류가 발생한 설치 단계
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 문제 현상과 재현 순서
+      description: 화면 사진이나 오류 메시지를 함께 남겨 주세요. 게임 원본이나 개인 라이선스는 첨부하지 마세요.
+    validations:
+      required: true
